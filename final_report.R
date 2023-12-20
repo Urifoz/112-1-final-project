@@ -159,6 +159,8 @@ dg6 |>
 
 View(dg6_filtered)
 
+install.packages("ggplot2")
+library(ggplot2)
 
 ggplot(dg6_filtered, aes(x = 項目別, y = 看報紙, group = 年度, color = as.factor(年度))) +
   geom_line(size = 1) +
